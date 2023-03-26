@@ -6,8 +6,6 @@ I have spent quite a while to write some documents detailing things I encountere
 - [Sys-mitm, a man-in-the-midle qube for traffic analysis](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md)
 - [Qubes OS recovery docs](https://github.com/ClaraCrazy/qubes-docs/blob/main/recovery.md)
 
-
-
 -----
 <br><br>
 Also, I wouldnt be where I am with Qubes OS without these wonderful documents:
@@ -37,7 +35,7 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents:
 - [qvm-screenshot-tool](https://github.com/evadogstar/qvm-screenshot-tool)
 - [qvm-wallpaper-tool](https://github.com/evadogstar/qvm-wallpaper-tool)
 - [qvm-open-in-another-vm](https://github.com/Rudd-O/qvm-open-in-another-vm)
-- [Remote Dom0 VNC](https://forum.qubes-os.org/t/remote-qubes-user-testing-running-qubes-in-the-browser/13817) - Remote Dom0 VNC
+- [Remote Dom0 VNC](https://forum.qubes-os.org/t/remote-qubes-user-testing-running-qubes-in-the-browser/13817)
 
 -----
 
