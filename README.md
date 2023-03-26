@@ -12,8 +12,8 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents:
 
 ### Qubes Docs for initial setup:
 
-- [sys-usb Qube](https://www.qubes-os.org/doc/usb-qubes/#how-to-create-a-usb-qube-for-use-with-a-usb-keyboard)
-- [sys-vpn Qube using Mullvad](https://mullvad.net/help/qubes-os-4-and-mullvad-vpn/)
+- [Sys-usb Qube](https://www.qubes-os.org/doc/usb-qubes/#how-to-create-a-usb-qube-for-use-with-a-usb-keyboard)
+- [Sys-vpn Qube using Mullvad](https://mullvad.net/help/qubes-os-4-and-mullvad-vpn/)
 - [Custom App entries for the Q Menu](https://www.qubes-os.org/doc/app-menu-shortcut-troubleshooting/)
 - [Systemwide dark-mode (XFCE)](https://forum.qubes-os.org/t/guide-xfce-global-dark-mode-in-qubes-4-0-4-1/10757)
 - [U2F app](https://github.com/QubesOS/qubes-app-u2f)
