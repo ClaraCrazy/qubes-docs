@@ -23,7 +23,7 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents:
 
 -----
 
-### For the Windows Gaming HVM:
+### For a Gaming HVM:
 
 - [Secondary Storage for VM](https://www.qubes-os.org/doc/secondary-storage/)
 - [GPU Passthrough docs](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md)
