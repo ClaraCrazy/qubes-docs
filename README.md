@@ -8,7 +8,7 @@ I have spent quite a while to write some documents detailing things I encountere
 
 -----
 <br><br>
-Also, I wouldnt be where I am with Qubes OS without these wonderful documents:
+Also, I wouldnt be where I am with Qubes OS without these wonderful documents of the community:
 
 ### Qubes Docs for initial setup:
 
