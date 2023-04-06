@@ -6,6 +6,8 @@ I have spent quite a while to write some documents detailing things I encountere
 - [Sys-mitm, a man-in-the-midle qube for traffic analysis](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md)
 - [Qubes OS recovery docs](https://github.com/ClaraCrazy/qubes-docs/blob/main/recovery.md)
 
+- [My entire journey with QubesOS, for those that actually care](https://github.com/ClaraCrazy/qubes-docs/journey.md)
+
 -----
 <br><br>
 Also, I wouldnt be where I am with Qubes OS without these wonderful documents of the community:
@@ -21,6 +23,16 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 
 -----
 
+### Other Qubes Scripts / links that helped me get to where I am
+
+- [Qubes-Template-Builder](https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-archlinux-template.md)
+- [In-place Template updates](https://www.qubes-os.org/doc/templates/fedora/in-place-upgrade/#detailed-instructions-for-standard-fedora-templates)
+- [Split-SSH setup for secure usage](https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/split-ssh.md)
+
+- [Understanding "-dm" sys-qubes](https://wiki.xenproject.org/wiki/Device_Model_Stub_Domains)
+
+-----
+
 ### For a Gaming HVM:
 
 - [Secondary Storage for VM](https://www.qubes-os.org/doc/secondary-storage/)
@@ -29,10 +41,16 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 
 -----
 
-### Community Scripts, handle with caution:
+### Community Scripts I use (handle with caution):
+
+- [qvm-screenshot-tool](https://github.com/evadogstar/qvm-screenshot-tool)
+- [Beautiful Conky](https://github.com/3hhh/qubes-conky) (Requires some adjustments, see [here](https://soon.tm))
+
+-----
+
+### Noteworthy mentions (handle with caution):
 
 - [qvm-create-windows-qube](https://github.com/elliotkillick/qvm-create-windows-qube)
-- [qvm-screenshot-tool](https://github.com/evadogstar/qvm-screenshot-tool)
 - [qvm-wallpaper-tool](https://github.com/evadogstar/qvm-wallpaper-tool)
 - [qvm-open-in-another-vm](https://github.com/Rudd-O/qvm-open-in-another-vm)
 - [Remote Dom0 VNC](https://forum.qubes-os.org/t/remote-qubes-user-testing-running-qubes-in-the-browser/13817)
