@@ -5,7 +5,7 @@ I have spent quite a while to write some documents detailing things I encountere
 
 - [Sys-mitm, a man-in-the-midle qube for traffic analysis](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md)
 - [Qubes OS recovery docs](https://github.com/ClaraCrazy/qubes-docs/blob/main/recovery.md)
-
+<br><br>
 - [My entire journey with QubesOS, for those that actually care](https://github.com/ClaraCrazy/qubes-docs/journey.md)
 
 -----
@@ -28,7 +28,7 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 - [Qubes-Template-Builder](https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-archlinux-template.md)
 - [In-place Template updates](https://www.qubes-os.org/doc/templates/fedora/in-place-upgrade/#detailed-instructions-for-standard-fedora-templates)
 - [Split-SSH setup for secure usage](https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/split-ssh.md)
-
+<br><br>
 - [Understanding "-dm" sys-qubes](https://wiki.xenproject.org/wiki/Device_Model_Stub_Domains)
 
 -----
