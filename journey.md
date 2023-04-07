@@ -60,10 +60,12 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
   
 - Global settings:
   - I wasnt sure what the right settings would be, but eventually I settled on testing releases for all three Source repositories. This comes with some risks ofc, especially the community repos, but I think I will be fine.
-  
+
+<br><br>
+
 -----
 
-- So, where did all of that get me? It got me right here:
+- So, where are we now? We are right here:
 
 ![preview](https://user-images.githubusercontent.com/55334727/230661658-2ffb098b-5563-4288-ae8e-e28c69a08888.jpg)
 
