@@ -54,12 +54,16 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
   You might notice two other qubes that peak your interest: <code>Template builder</code> and <code>gpu_win10</code>. 
 
     - Template-builder is my dedicated Qube for building Qubes OS templates, and in theory an entire ISO. 
-    - gpu_win10 is my gaming Qube. 32GB of ram, a 3060 using [passthrough](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) and 8 Cores assigned to it. It runs games very well, at least the ones that dont do VM detection. Currently working on that, and will post a guide once I figured it out!
+    - gpu_win10 is my gaming Qube. 32GB of ram, a 3060 using [passthrough](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) and 8 Cores assigned to it. It runs games very well, at least the ones that dont do VM detection. Currently working on that, and will post a guide once I figured it out! As to why this VM has the green "trusted" color? Well, its windows. It has shit integration with qubes and needs different hardware to even run. Its incompatibility is a great factor. Another one is that it sits on its own disk. The used GPU is not just excluded from qubes, but also from xen via grub config, and  
 
   Last but not least, theres <code>sys-vpn</code> & <code>sys-mitm</code>. Sys-vpn is another net-qube using Mullvad, and [sys-mitm](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md) is a qube for man-in-the-middle usage to analyze traffic from untrusted qubes / apps.
   
 - Global settings:
-  - I wasnt sure what the right settings would be, but eventually
+  - I wasnt sure what the right settings would be, but eventually I settled on testing releases for all three Source repositories. This comes with some risks ofc, especially the community repos, but I think I will be fine.
+  
+-----
+
+
 
 <br clear="right"/>
 
