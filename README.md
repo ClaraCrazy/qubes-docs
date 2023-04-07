@@ -6,7 +6,7 @@ I have spent quite a while to write some documents detailing things I encountere
 - [Sys-mitm, a man-in-the-midle qube for traffic analysis](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md)
 - [Qubes OS recovery docs](https://github.com/ClaraCrazy/qubes-docs/blob/main/recovery.md)
 <br><br>
-- [My entire journey with QubesOS, for those that actually care](https://github.com/ClaraCrazy/qubes-docs/journey.md)
+- [My entire journey with QubesOS, for those that actually care]([https://github.com/ClaraCrazy/qubes-docs/journey.md](https://github.com/ClaraCrazy/qubes-docs/blob/main/journey.md))
 
 -----
 <br><br>
@@ -19,7 +19,7 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 - [Custom App entries for the Q Menu](https://www.qubes-os.org/doc/app-menu-shortcut-troubleshooting/)
 - [Systemwide dark-mode (XFCE)](https://forum.qubes-os.org/t/guide-xfce-global-dark-mode-in-qubes-4-0-4-1/10757)
 - [U2F app](https://github.com/QubesOS/qubes-app-u2f)
-- [Auto-shutdown for qubes](https://forum.qubes-os.org/t/auto-shutdown-vm-when-app-is-closed/8574/2) [More of that](https://github.com/QubesOS/qubes-app-shutdown-idle) (nice for banking qube etc.)
+- [Auto-shutdown for qubes](https://forum.qubes-os.org/t/auto-shutdown-vm-when-app-is-closed/8574/2) | [More of that](https://github.com/QubesOS/qubes-app-shutdown-idle) (nice for banking qube etc.)
 
 -----
 
