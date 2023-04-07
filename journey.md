@@ -36,7 +36,7 @@ After a call with a friend I randomly decided to give it a shot. I made a copy o
 
 The solution to both was obvious, and a friend helped me with it. I switched to KDE, after another hour of troubleshooting my Screen issues were solved, KDE looked beautiful and Qubes was up and running.
 
-<img src="https://user-images.githubusercontent.com/55334727/230643732-1030bac1-b14e-4e9d-b567-18d2d2d87dfe.png" align="right" width="200px"/>
+<img src="https://user-images.githubusercontent.com/55334727/230693020-76fda6de-57d1-49bb-8151-ad12fec8f183.png" align="right" width="200px"/>
 Throughout the next couple of weeks I made a fatal mistake. I installed crap on my Template. I totally forgot about how all of this even worked and just blindly installed all my stuff on there. I mean, its kinda how you do it, but also not at all. I realized this once I installed a package that would auto-start and absolutely trigger me with that. Sooo.. I made a new template, and kept the old one as "template-untrusted". That way I could use (some of) these packages in a qube where I need them, and have a clean slate for the other ones. 
 <br><br>
 Talking about VMs, a lot of people arent sure how to structure theirs, so lets talk about my setup:
