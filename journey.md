@@ -69,9 +69,11 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
 
 ![preview](https://user-images.githubusercontent.com/55334727/230662490-1c2dca65-da6e-4d3d-9beb-73c5b24a7407.png)
 
-Running qubes as my main Operating system, being very happy with it. If you got any questions, feel free to ask me. My email is linked on github, and my Discord tag is ClaraCrazy#6969
+Running qubes as my main Operating system, being very happy with it. The compartmentalization has allowed me to work with a lot less worry that anything will be compromised. My keys are in a vault, my workflows are separated from all the dangerous things, Google has a harder time to track me around the web, and what I never thought about that does make sense tho; Its a lot more clean and organized now. Back then finding a file on my system was painful. Now its all nice and sorted, thanks to qubes. 
 
+If you got any questions, feel free to ask me. My email is linked on github, and my Discord tag is ClaraCrazy#6969
 
+<br><br>
 Cheers
 
 
