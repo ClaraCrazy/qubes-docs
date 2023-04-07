@@ -63,6 +63,14 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
   
 -----
 
+- So, where did all of that get me? It got me right here:
+
+![preview](https://user-images.githubusercontent.com/55334727/230661658-2ffb098b-5563-4288-ae8e-e28c69a08888.jpg)
+
+Running qubes as my main Operating system, being very happy with it. If you got any questions, feel free to ask me. My email is linked on github, and my Discord tag is ClaraCrazy#6969
+
+
+Cheers
 
 
 <br clear="right"/>
