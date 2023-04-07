@@ -42,10 +42,24 @@ Throughout the next couple of weeks I made a fatal mistake. I installed crap on 
 Talking about VMs, a lot of people arent sure how to structure theirs, so lets talk about my setup:
 
 - The colors:
-  - Figuring out the colors you want to use is the first important thing. Will you base it on its apps running in each (e.g. discord = blue, vscode = purple, browser = orange), or do you want to make some kind of security-based scheme like I did? Red being the most dangerous, while green is fine to use (we'll talk about why Win10 is green later). Templates are grey, almost "greyed out" as in you cant touch them, because you shouldnt. Black is above red in my case. Be very very careful, dont mess things up, not because it will harm your system, but because it will harm you.
+  - Figuring out the colors you want to use is the first important thing. <br><br>Will you base it on its apps running in each (e.g. discord = blue, vscode = purple, browser = orange), or do you want to make some kind of security-based scheme like I did? Red being the most dangerous, while green is fine to use (we'll talk about why Win10 is green later). Templates are grey, almost "greyed out" as in you cant touch them, because you shouldnt. Black is above red in my case. Be very very careful, dont mess things up, not because it will harm your system, but because it will harm you.
   
 - What VMs to use:
-  - aaaa
+  - What do you need? Debian, Fedora, Arch, Ubuntu even? Thats a good question, and I'm glad you asked. What you really need is a distro you feel comfortable with. It doesnt matter what it is. Dont worry about it. You can harden almost any qube and at the end of the day its important that you are happy with using it. I chose fedora because I prefer it over Debian-based distros, and am not yet unhinged enough to run Arch. 
+
+  <br>
+
+  With a fedora template I built most of my qubes. <code>Media</code> for Music, Youtube & Discord. <code>Work</code> for my business, <code>Banking</code> should be obvious, and <code>Coding</code> is for all my projects you can find on github.
+  <br>
+  You might notice two other qubes that peak your interest: <code>Template builder</code> and <code>gpu_win10</code>. 
+
+    - Template-builder is my dedicated Qube for building Qubes OS templates, and in theory an entire ISO. 
+    - gpu_win10 is my gaming Qube. 32GB of ram, a 3060 using [passthrough](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) and 8 Cores assigned to it. It runs games very well, at least the ones that dont do VM detection. Currently working on that, and will post a guide once I figured it out!
+
+  Last but not least, theres <code>sys-vpn</code> & <code>sys-mitm</code>. Sys-vpn is another net-qube using Mullvad, and [sys-mitm](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md) is a qube for man-in-the-middle usage to analyze traffic from untrusted qubes / apps.
+  
+- Global settings:
+  - I wasnt sure what the right settings would be, but eventually
 
 <br clear="right"/>
 
