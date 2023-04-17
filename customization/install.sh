@@ -50,8 +50,8 @@ if [[ "$color_list" =~ .*\ $1\ .* ]]; then
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 
 	# Move my zshrc config & powerlevel10k
-	cp .zshrc ~/.zshrc
-	cp .p10k.zsh ~/.p10k.zsh
+	cp zshrc ~/.zshrc
+	cp p10k.zsh ~/.p10k.zsh
 
 
 	echo "[2/5] - Installing fonts" && sleep 1
@@ -60,7 +60,7 @@ if [[ "$color_list" =~ .*\ $1\ .* ]]; then
 	mkdir ~/.fonts
 
 	# Move fonts
-	cp -r .fonts/ ~/
+	cp -r fonts/ ~/
 
 	# Clear fonts cache
 	fc-cache
