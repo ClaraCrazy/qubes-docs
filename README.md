@@ -38,7 +38,7 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 ### For a Gaming HVM:
 
 - [Secondary Storage for VM](https://www.qubes-os.org/doc/secondary-storage/)
-- [GPU Passthrough docs](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md)
+- [GPU Passthrough docs](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) | psst.. on that 3.5gb patch, replace `_` with `-` for qube naming consistency
 - [Creating the HVM](https://www.qubes-os.org/doc/standalones-and-hvms/#creating-an-hvm)
 
 -----
