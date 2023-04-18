@@ -69,7 +69,7 @@ if [[ "$whereami" =~ .*"-".* ]] || $dom0 ; then
 	echo "[0/5] - Installing requirements..."
 
 	# If we are inside a template, install the deps first
-	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar -y
+	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar zenity yad -y
 	sudo dnf remove nautilus -y
 
 	# If template is considered non-minimal
@@ -85,14 +85,15 @@ if [[ "$whereami" =~ .*"-".* ]] || $dom0 ; then
 			flatpak install com.github.Eloston.UngoogledChromium -y
 		else
 			sudo $dnf rofi # Rofi
-			# KDE, huh? fancy boi
-			if ["YES" = $kde ] ; then
-				sudo $dnf kde-settings-qubes kde-gtk-config
-				sudo bash -c 'echo -e "[XDisplay]\nServerArguments=-nolisten tcp -background none" >> /etc/sddm.conf'
-				sudo systemctl disable lightdm
-				sudo systemctl enable sddm
-			fi
 		fi
+	fi
+
+	if ["YES" = $kde ] ; then
+		sudo $dnf kde-settings-qubes kde-gtk-config
+		sudo bash -c 'echo -e "[XDisplay]\nServerArguments=-nolisten tcp -background none" >> /etc/sddm.conf'
+		sudo systemctl disable lightdm
+		sudo systemctl enable sddm
+
 	fi
 
 	echo "[0/5] - Requirements installed"

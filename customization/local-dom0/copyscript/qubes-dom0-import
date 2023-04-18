@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+
+qubes="$(qvm-ls --raw-list | grep -v -e '-dvm$'  -e '^sys-' -e '^archlinux-' -e '^debian-' -e '^fedora-' -e '^whonix-')"
+qube="$(zenity --list --modal --width 150 --height 350 --title 'Dom0 import' --text 'Select source:' --column 'Qube' $qubes)"
+paths="$(qvm-run --pass-io "$qube" 'yad --title "Dom0 import" --file --multiple --separator \\n 2>/dev/null')"
+
+declare -a files
+declare -a cwd
+idx=0
+oIFS="$IFS"
+IFS=$'\n'
+for path in $paths ; do
+    IFS="$oIFS"
+    if [ "$idx" = "0" ] ; then
+        cwd[0]="$(dirname "$path")"
+    fi
+    files[$idx]="$(basename "$path")"
+    idx=$((idx+1))
+done
+IFS="$oIFS"
+
+cmd='tgz="$(mktemp --suffix .tgz)" ; cd '
+cmd+="${cwd[@]@Q}"
+cmd+=' ; tar -czf "$tgz" '
+cmd+="${files[@]@Q}"
+cmd+=' ; cat "$tgz" ; rm "$tgz"'
+
+tgz="$(mktemp --suffix .tgz)"
+qvm-run --pass-io "$qube" "$cmd" > "$tgz"
+tar -xzf "$tgz"
+rm "$tgz"

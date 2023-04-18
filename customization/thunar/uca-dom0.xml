@@ -4,7 +4,7 @@
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<unique-id>1681405083390000-1</unique-id>
-	<command>gnome-terminal</command>
+	<command>konsole</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
 	<startup-notify/>
@@ -35,6 +35,20 @@
 	<unique-id>1681760725819111-2</unique-id>
 	<command>bash -c &quot;qvm-move-to-vm \&quot;$(zenity --list --modal --width 150 --height 350 --title &apos;&apos; --text &apos;Select destination:&apos; --column &apos;Qube&apos; $(qvm-ls --raw-list | grep -v -e &apos;-dvm$&apos;  -e &apos;^sys-&apos; -e &apos;^archlinux-&apos; -e &apos;^debian-&apos; -e &apos;^fedora-&apos; -e &apos;^whonix-&apos;))\&quot; %F&quot;</command>
 	<description>Move files to other VM</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>document-import</icon>
+	<name>Import from VM</name>
+	<unique-id>1681795776688088-1</unique-id>
+	<command>qubes-dom0-import</command>
+	<description>Import files from another VM to dom0</description>
 	<patterns>*</patterns>
 	<directories/>
 	<audio-files/>
