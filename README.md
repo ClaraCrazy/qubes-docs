@@ -5,7 +5,7 @@ I have spent quite a while to write some documents detailing things I encountere
 
 - [Sys-mitm, a man-in-the-midle qube for traffic analysis](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md)
 - [Qubes OS recovery docs](https://github.com/ClaraCrazy/qubes-docs/blob/main/recovery.md)
-- [Qubes OS Customization](https://github.com/ClaraCrazy/qubes-docs/customization)
+- [Qubes OS Customization](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization)
 <br><br>
 
 - [My entire journey with QubesOS, for those that actually care](https://github.com/ClaraCrazy/qubes-docs/blob/main/journey.md)
