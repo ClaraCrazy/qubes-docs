@@ -8,7 +8,7 @@ I wanted to take the time and document my journey with Qubes, to give others an 
 
 So, the journey began around 2018, when the world wasnt covid-plagued yet. I'm not sure anymore how exactly it went down, but eventually I just found myself browsing for a more secure alternative to Windows / Linux. I found Qubes, read about the [Nitropad](https://shop.nitrokey.com/shop/product/nitropad-x230-67) being [certified Hardware](https://www.qubes-os.org/news/2020/03/04/nitropad-x230-qubes-certification/) and eventually I just ordered one. It arrived a few days later and after being confused for a solid hour I slowly understood how this OS works. Mind you, documentation wasnt that good back then. It was there, no doubts, but it lacked a lot of info IMO.
 
-So, with my nitropad I explored TOR for the first time in years, found some random-chat sites, snooped around archival sites, and just messed around. Eventually I built some Windows (10?) VM to test some malware, as I am somewhat known in that scene for writing my own code and deobfuscating the stuff of others. Here are some pics I found of that time:
+So, with my nitropad I explored TOR for the first time in years, found some random-chat sites, snooped around archival sites, and just messed around. Eventually I built some Windows (10?) VM to test some malware, as I am somewhat known in that scene for writing my own code and deobfuscating the stuff of others. Here are some pics I found of that time (Turns out they arent from that time, but from that same nitropad, so I'll let it slide):
 
 <p align="center">
   <img alt="My System:" src="https://user-images.githubusercontent.com/55334727/230639791-6070e9bf-7329-4373-b803-8cb1eed67e86.png" width="45%">
