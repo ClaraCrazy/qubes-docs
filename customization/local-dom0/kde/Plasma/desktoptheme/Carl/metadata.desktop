@@ -1,0 +1,27 @@
+[Desktop Entry]
+Comment[es_ES]=Carl
+Name=Carl
+Name[es_ES]=Carl
+X-KDE-PluginInfo-Author=jomada
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-Depends=plasma-desktop
+X-KDE-PluginInfo-Email=gicalucejo@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=LGPL
+X-KDE-PluginInfo-Name=Carl
+X-KDE-PluginInfo-Version=1.5.1
+X-KDE-PluginInfo-Website=
+X-Plasma-API=5.0
+comment=carl
+
+[Wallpaper]
+defaultFileSuffix=.png
+defaultHeight=1080
+defaultWallpaperTheme=
+defaultWidth=1920
+
+[ContrastEffect]
+enabled=false
+
+[AdaptiveTransparency]
+enabled=true

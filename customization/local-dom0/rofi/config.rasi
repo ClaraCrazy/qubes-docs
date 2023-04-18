@@ -1,0 +1,16 @@
+configuration {
+	modi: "run,drun";
+	show-icons: true;
+	icon-theme: "Oranchelo";
+	terminal: "Konsole";
+	drun-display-format: "{icon} {name}";
+	location: 0;
+	disable-history: true;
+	hide-scrollbar: true;
+        display-run: "   Run "; // Meslo font needed
+        display-drun: " ★  Apps";
+	sidebar-mode: true;
+}
+
+@theme "rounded-blue-dark"
+//@theme "windows11-list-dark"

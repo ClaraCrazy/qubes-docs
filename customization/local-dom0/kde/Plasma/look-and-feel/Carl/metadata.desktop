@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=Carl look
+Name=Carl
+X-KDE-PluginInfo-Author=jomada
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=gicalucejo@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 3+
+X-KDE-PluginInfo-Name=Carl
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://seduccionlinux.wordpress.com
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1331616,kns://plasma-themes.knsrc/api.kde-look.org/1330604,kns://aurorae.knsrc/api.kde-look.org/1331617,kns://icons.knsrc/api.kde-look.org/1305429

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1681405083390000-1</unique-id>
+	<command>gnome-terminal</command>
+	<description>Open terminal in this folder</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>edit-copy</icon>
+	<name>Copy to VM</name>
+	<unique-id>1681758772657017-1</unique-id>
+	<command>qvm-copy %F</command>
+	<description>Copy files to other VM</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>edit-cut</icon>
+	<name>Move to VM</name>
+	<unique-id>1681758809878981-2</unique-id>
+	<command>qvm-move %F</command>
+	<description>Move files to other VM</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
