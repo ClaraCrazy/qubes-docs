@@ -36,7 +36,7 @@ After a call with a friend I randomly decided to give it a shot. I made a copy o
 
 The solution to both was obvious, and a friend helped me with it. I switched to KDE, after another hour of troubleshooting my Screen issues were solved, KDE looked beautiful and Qubes was up and running.
 
-<img src="https://user-images.githubusercontent.com/55334727/230693020-76fda6de-57d1-49bb-8151-ad12fec8f183.png" align="right" width="200px"/>
+<img src="https://user-images.githubusercontent.com/55334727/232687683-9fd20d08-eb7c-4156-8a8a-69635a3a822d.png" align="right" width="200px"/>
 Throughout the next couple of weeks I made a fatal mistake. I installed crap on my Template. I totally forgot about how all of this even worked and just blindly installed all my stuff on there. I mean, its kinda how you do it, but also not at all. I realized this once I installed a package that would auto-start and absolutely trigger me with that. Sooo.. I made a new template, and kept the old one as "template-untrusted". That way I could use (some of) these packages in a qube where I need them, and have a clean slate for the other ones. 
 <br><br>
 Talking about VMs, a lot of people arent sure how to structure theirs, so lets talk about my setup:
@@ -51,10 +51,10 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
 
   With a fedora template I built most of my qubes. <code>Media</code> for Music, Youtube & Discord. <code>Work</code> for my business, <code>Banking</code> should be obvious, and <code>Coding</code> is for all my projects you can find on github.
   <br>
-  You might notice two other qubes that peak your interest: <code>Template builder</code> and <code>gpu_win10</code>. 
+  You might notice two other qubes that peak your interest: <code>Template builder</code> and <code>gpu-win10</code>. 
 
     - Template-builder is my dedicated Qube for building Qubes OS templates, and in theory an entire ISO. 
-    - gpu_win10 is my gaming Qube. 32GB of ram, a 3060 using [passthrough](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) and 8 Cores assigned to it. It runs games very well, at least the ones that dont do VM detection. Currently working on that, and will post a guide once I figured it out! As to why this VM has the green "trusted" color? Well, its windows. It has shit integration with qubes and needs different hardware to even run. Its incompatibility is a great factor. Another one is that it sits on its own disk. The used GPU is not just excluded from qubes, but also from xen via grub config, and I'm also only using it for games. Nothing else
+    - gpu-win10 is my gaming Qube. 32GB of ram, a 3060 using [passthrough](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) and 6 Cores assigned to it. It runs games very well, surprisingly enough, at least for now most games with VM detection dont seem to cry either. Will update once im banned, lmao. As to why this VM has the green "trusted" color? Well, its windows. It has shit integration with qubes and needs different hardware to even run. Its incompatibility is a great factor. Another one is that it sits on its own disk. The used GPU is not just excluded from qubes, but also from xen via grub config, and I'm also only using it for games. Nothing else
 
   Last but not least, theres <code>sys-vpn</code> & <code>sys-mitm</code>. Sys-vpn is another net-qube using Mullvad, and [sys-mitm](https://github.com/ClaraCrazy/qubes-docs/blob/main/sys-mitm.md) is a qube for man-in-the-middle usage to analyze traffic from untrusted qubes / apps.
   
@@ -67,9 +67,9 @@ Talking about VMs, a lot of people arent sure how to structure theirs, so lets t
 
 - So, where are we now? We are right here:
 
-![preview](https://user-images.githubusercontent.com/55334727/230662490-1c2dca65-da6e-4d3d-9beb-73c5b24a7407.png)
+![Riced qubes](https://user-images.githubusercontent.com/55334727/232661598-3ddd4b07-9c78-4088-a892-41f8dadf0a5f.png)
 
-Running qubes as my main Operating system, being very happy with it. The compartmentalization has allowed me to work with a lot less worry that anything will be compromised. My keys are in a vault, my workflows are separated from all the dangerous things, Google has a harder time to track me around the web, and what I never thought about that does make sense tho; Its a lot more clean and organized now. Back then finding a file on my system was painful. Now its all nice and sorted, thanks to qubes. 
+Running qubes as my main Operating system, being very happy with it. The compartmentalization has allowed me to work with a lot less worry that anything will be compromised. My keys are in a vault, my workflows are separated from all the dangerous things, Google has a harder time to track me around the web, and what I never thought about that does make sense tho; Its a lot more clean and organized now. Back then finding a file on my system was painful. Now its all nice and sorted, thanks to qubes. I also riced my entire system, as you can read about in [the customization part of this repo](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization)
 
 If you got any questions, feel free to ask me. My email is linked on github, and my Discord tag is ClaraCrazy#6969
 
