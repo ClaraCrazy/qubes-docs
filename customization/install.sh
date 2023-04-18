@@ -162,7 +162,7 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 		gsettings set org.gnome.desktop.interface icon-theme "BeautyLine"
 	else
 		# Theme our dom0
-		if $kde; then
+		if [ "YES" = $kde ] ; then
 			# Dom0 using kde
 			cp -r local-dom0/kde/Plasma/ ~/.local/share/plasma # Desktoptheme + look-and-feel
 			cp -r local-dom0/kde/Konsole/ ~/.local/share/konsole # Konsole
@@ -204,7 +204,7 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 		mkdir -p ~/.local/share/rofi/
 		cp -r rofi/themes ~/.local/share/rofi/themes
 		cp rofi/config.rasi ~/.config/rofi/
-
+	fi
 
 else
 	echo "Color not found"
