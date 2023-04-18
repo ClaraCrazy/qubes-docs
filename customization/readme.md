@@ -31,3 +31,6 @@ No. Read the source. If you dont understand it, ask someone to explain it (not m
 
 
 ## Pics or it didnt happen
+
+![2023-04-18-050335](https://user-images.githubusercontent.com/55334727/232661598-3ddd4b07-9c78-4088-a892-41f8dadf0a5f.png)
+![2023-04-18-050423](https://user-images.githubusercontent.com/55334727/232661476-b00a15a1-63b4-401c-8009-10744732a52b.png)
