@@ -1,0 +1,43 @@
+#!/bin/bash
+set -e
+
+qube="$(qubes-select-qube 'Dom0 move' 'Select source:')"
+paths="$(qvm-run --pass-io "$qube" 'yad --title "Dom0 import" --file --multiple --separator \\n 2>/dev/null')"
+
+declare -a files
+declare -a cwd
+idx=0
+oIFS="$IFS"
+IFS=$'\n'
+for path in $paths ; do
+    IFS="$oIFS"
+    if [ "$idx" = "0" ] ; then
+        cwd[0]="$(dirname "$path")"
+    fi
+    files[$idx]="$(basename "$path")"
+    idx=$((idx+1))
+done
+IFS="$oIFS"
+
+cmd='tgz="$(mktemp --suffix .tgz)" ; cd '
+cmd+="${cwd[@]@Q}"
+cmd+=' ; i=0 p=0 t=$(find '
+cmd+="${files[@]@Q}"
+cmd+=' | wc -l) ; tar -czvf "$tgz" '
+cmd+="${files[@]@Q}"
+cmd+=' | while read ; do i=$(($i + 1)) ; echo $(($i * 100 / $t)) ; done | yad --progress --title "Zipping..." --width 300 --height 90 --auto-close ; cat "$tgz" ; rm "$tgz"'
+
+tgz="$(mktemp --suffix .tgz)"
+qvm-run --pass-io "$qube" "$cmd" > "$tgz"
+i=0 p=0 t=$(tar -tzf "$tgz" | wc -l)
+tar -xzvf "$tgz" | while read ; do
+    i=$(($i + 1))
+    echo $(($i * 100 / $t))
+done | yad --progress --title "Unzipping..." --width 300 --height 90 --auto-close
+rm "$tgz"
+
+cmd='cd '
+cmd+="${cwd[@]@Q}"
+cmd+=' ; rm -r '
+cmd+="${files[@]@Q}"
+qvm-run "$qube" "$cmd"

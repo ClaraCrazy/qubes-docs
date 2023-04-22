@@ -70,7 +70,7 @@ if [  "$type" != "AppVM" ] || $dom0 ; then
 	echo "[0/5] - Installing requirements..."
 
 	# If we are inside a template, install the deps first
-	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar yad -y
+	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar zenity yad -y
 	sudo dnf remove nautilus -y
 
 	# If template is considered non-minimal
@@ -201,11 +201,15 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 		cp /thunar/uca.xml ~/.config/Thunar/uca.xml
 	fi
 
-	# Rofi config
 	if $dom0 ; then
+		# Rofi config
 		mkdir -p ~/.local/share/rofi/
-		cp -r rofi/themes ~/.local/share/rofi/themes
-		cp rofi/config.rasi ~/.config/rofi/
+		cp -r local-dom0/rofi/themes ~/.local/share/rofi/themes
+		cp local-dom0/rofi/config.rasi ~/.config/rofi/
+
+		# dom0 scripts to copy / move into it
+		cp -a local-dom0/copyscript/. /usr/local/bin/
+
 	fi
 
 else

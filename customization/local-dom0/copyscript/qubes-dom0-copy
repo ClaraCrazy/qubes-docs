@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-qubes="$(qvm-ls --raw-list | grep -v -e '-dvm$'  -e '^sys-' -e '^archlinux-' -e '^debian-' -e '^fedora-' -e '^whonix-')"
-qube="$(zenity --list --modal --width 150 --height 350 --title 'Dom0 import' --text 'Select source:' --column 'Qube' $qubes)"
+qube="$(qubes-select-qube 'Dom0 copy' 'Select source:')"
 paths="$(qvm-run --pass-io "$qube" 'yad --title "Dom0 import" --file --multiple --separator \\n 2>/dev/null')"
 
 declare -a files
@@ -22,11 +21,17 @@ IFS="$oIFS"
 
 cmd='tgz="$(mktemp --suffix .tgz)" ; cd '
 cmd+="${cwd[@]@Q}"
-cmd+=' ; tar -czf "$tgz" '
+cmd+=' ; i=0 p=0 t=$(find '
 cmd+="${files[@]@Q}"
-cmd+=' ; cat "$tgz" ; rm "$tgz"'
+cmd+=' | wc -l) ; tar -czvf "$tgz" '
+cmd+="${files[@]@Q}"
+cmd+=' | while read ; do i=$(($i + 1)) ; echo $(($i * 100 / $t)) ; done | yad --progress --title "Zipping..." --width 300 --height 90 --auto-close ; cat "$tgz" ; rm "$tgz"'
 
 tgz="$(mktemp --suffix .tgz)"
 qvm-run --pass-io "$qube" "$cmd" > "$tgz"
-tar -xzf "$tgz"
+i=0 p=0 t=$(tar -tzf "$tgz" | wc -l)
+tar -xzvf "$tgz" | while read ; do
+    i=$(($i + 1))
+    echo $(($i * 100 / $t))
+done | yad --progress --title "Unzipping..." --width 300 --height 90 --auto-close
 rm "$tgz"

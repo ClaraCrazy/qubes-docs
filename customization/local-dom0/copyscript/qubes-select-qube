@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+qubes="$(qvm-ls --raw-list | grep -v -e '-dvm$'  -e '^sys-' -e '^archlinux-' -e '^debian-' -e '^fedora-' -e '^whonix-')"
+qubes="$(python3 -c "import sys, qubesadmin ; qubes = qubesadmin.Qubes().domains ; print('\n'.join(f'{qubes[qube].icon} {qube}' for qube in sys.argv[1:] if qube in qubes))" $qubes)"
+echo -n "$(yad --list --modal --no-headers --width 150 --height 350 --title "${1:-Qubes}" --text "${2:-Select qube:}" --column ':IMG' --column '' $qubes | cut -d '|' -f 2)"
