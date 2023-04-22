@@ -1,6 +1,10 @@
 #!/bin/bash
 # This script automatically configures new qubes for my usage
 
+# Add defaults
+kde="NO"
+extended="NO"
+
 
 # Check if we have our arguments
 if [ "$1" = "--help" ] ; then
@@ -75,7 +79,7 @@ if [  "$type" != "AppVM" ] || $dom0 ; then
 	sudo dnf remove nautilus -y
 
 	# If template is considered non-minimal
-	if [ "YES" == $extended ] ; then
+	if [ $extended = "YES" ] ; then
 		if ! $dom0; then
 			# Add sublime repo
 			sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
@@ -90,7 +94,7 @@ if [  "$type" != "AppVM" ] || $dom0 ; then
 		fi
 	fi
 
-	if ["YES" = $kde ] ; then
+	if [ $kde = "YES" ] ; then
 		sudo $dnf kde-settings-qubes kde-gtk-config
 		sudo bash -c 'echo -e "[XDisplay]\nServerArguments=-nolisten tcp -background none" >> /etc/sddm.conf'
 		sudo systemctl disable lightdm
@@ -109,7 +113,7 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 
 
 	echo "[1/5] - Installing oh-my-zsh and powerlevel10k" && sleep 1
-	if $dom0; then
+	if ! $dom0; then
 		git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 		git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 	else
@@ -165,7 +169,7 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 		gsettings set org.gnome.desktop.interface icon-theme "BeautyLine"
 	else
 		# Theme our dom0
-		if [ "YES" = $kde ] ; then
+		if [ $kde == "YES" ] ; then
 			# Dom0 using kde
 			cp -r local-dom0/kde/Plasma/ ~/.local/share/plasma # Desktoptheme + look-and-feel
 			cp -r local-dom0/kde/Konsole/ ~/.local/share/konsole # Konsole
@@ -174,7 +178,7 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 			cp -r local-dom0/kde/Color-scheme/ ~/.local/share/color-schemes # Color-scheme
 
 			# Nicer Icons
-			cp -r Icons/BeautyLine ~/.local/share/icons
+			cp -r icons/BeautyLine ~/.local/share/icons
 
 			# Actually applying everything
 			sudo lookandfeeltool -a Carl
@@ -204,12 +208,13 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 
 	if $dom0 ; then
 		# Rofi config
-		mkdir -p ~/.local/share/rofi/
+		mkdir -p ~/.local/share/rofi
 		cp -r local-dom0/rofi/themes ~/.local/share/rofi/themes
-		cp local-dom0/rofi/config.rasi ~/.config/rofi/
+		cp local-dom0/rofi/config.rasi ~/.config/rofi/config.rasi
 
 		# dom0 scripts to copy / move into it
 		cp -a local-dom0/copyscript/. /usr/local/bin/
+		bash -c 'sudo chmod +x /usr/local/bin/*'
 
 	fi
 
