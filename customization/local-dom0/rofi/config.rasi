@@ -5,6 +5,8 @@ configuration {
 	terminal: "Konsole";
 	drun-display-format: "{icon} {name}";
 	location: 0;
+	sort: true;
+	sorting-method: "fzf";
 	disable-history: true;
 	hide-scrollbar: true;
         display-run: "   Run "; // Meslo font needed
