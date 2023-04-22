@@ -54,9 +54,10 @@ dom0=false
 whereami="$(hostname)"
 
 # Check our Qube type (returns nothing in dom0)
-type="$(python3 -c 'import qubesdb ; print(qubesdb.QubesDB().read("/type").decode())')"
+type="$(python3 -c 'import qubesdb ; print((qubesdb.QubesDB().read("/type") or b"dom0").decode())')"
 
-if ! $type ; then
+if [ $type = "dom0" ] ; then
+	echo "In dom0"
 	dnf="qubes-dom0-update"
 	dom0=true
 	color="BLUE"
@@ -196,9 +197,9 @@ if [[ "$color_list" =~ .*\ $color\ .* ]]; then
 	# Thunar magic
 	cp -rf xfce4/ ~/.config/xfce4
 	if $dom0 ; then
-		cp /thunar/uca-dom0.xml ~/.config/Thunar/uca.xml
+		cp thunar/uca-dom0.xml ~/.config/Thunar/uca.xml
 	else
-		cp /thunar/uca.xml ~/.config/Thunar/uca.xml
+		cp thunar/uca.xml ~/.config/Thunar/uca.xml
 	fi
 
 	if $dom0 ; then
