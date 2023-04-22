@@ -50,26 +50,27 @@ echo "Color           = ${color}"
 echo "Extended        = ${extended}"
 echo "KDE             = ${kde}"
 
-
+dom0=false
 whereami="$(hostname)"
 
-# Check if we are inside dom0, as we cant use DNF and git clone
-if [[ "$whereami" == "dom0" ]] ; then
+# Check our Qube type (returns nothing in dom0)
+type="$(python -c 'import qubesdb ; print(qubesdb.QubesDB().read("/type").decode())')"
+
+if ! $type ; then
 	dnf="qubes-dom0-update"
 	dom0=true
 	color="BLUE"
 else
 	dnf="dnf install"
-	dom0=false
 fi
 
-# This line checks if we are either inside a template (super cheap, I dont use dashes in my qube names, adjust acordingly) or dom0 (see above as to why)
-if [[ "$whereami" =~ .*"-".* ]] || $dom0 ; then
+# This line makes sure we are not inside an AppVM, since it would be pointless to install anything there
+if [  "$type" != "AppVM" ] || $dom0 ; then
 
 	echo "[0/5] - Installing requirements..."
 
 	# If we are inside a template, install the deps first
-	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar zenity yad -y
+	sudo $dnf zsh util-linux-user exa fzf micro gnome-tweaks xclip thunar yad -y
 	sudo dnf remove nautilus -y
 
 	# If template is considered non-minimal
@@ -82,7 +83,7 @@ if [[ "$whereami" =~ .*"-".* ]] || $dom0 ; then
 			# Install extended deps
 			sudo dnf remove firefox -y
 			sudo dnf install flatpak ddgr neofetch screenfetch sublime-text -y
-			flatpak install com.github.Eloston.UngoogledChromium -y
+			flatpak install flathub com.github.Eloston.UngoogledChromium -y
 		else
 			sudo $dnf rofi # Rofi
 		fi
