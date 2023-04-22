@@ -54,7 +54,7 @@ dom0=false
 whereami="$(hostname)"
 
 # Check our Qube type (returns nothing in dom0)
-type="$(python -c 'import qubesdb ; print(qubesdb.QubesDB().read("/type").decode())')"
+type="$(python3 -c 'import qubesdb ; print(qubesdb.QubesDB().read("/type").decode())')"
 
 if ! $type ; then
 	dnf="qubes-dom0-update"
