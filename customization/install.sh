@@ -73,10 +73,6 @@ echo "Install Scripts = ${install_scripts^} "
 echo
 echo "-------------------------------------------------------------------------------------------"
 
-if $kde ; then
-echo worky
-fi
-
 # From stackoverflow (https://stackoverflow.com/a/1885534)
 read -p "Are you sure? (y/n): " -n 1 -r
 echo    # (optional) move to a new line
