@@ -155,7 +155,7 @@ then
 		mkdir ~/.fonts
 
 		# Move fonts
-		cp -r fonts/ ~/
+		cp -r fonts/ ~/.fonts
 
 		# Clear fonts cache
 		fc-cache
