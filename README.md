@@ -46,7 +46,8 @@ Also, I wouldnt be where I am with Qubes OS without these wonderful documents of
 ### Community Scripts I use (handle with caution):
 
 - [qvm-screenshot-tool](https://github.com/evadogstar/qvm-screenshot-tool)
-- [Beautiful Conky](https://github.com/3hhh/qubes-conky) (Requires some adjustments, see [here](https://example.com))
+- [Beautiful Conky](https://github.com/3hhh/qubes-conky) (Requires some adjustments, have fun))
+- [Auto-attach devices to specific qube](https://forum.qubes-os.org/t/usb-device-auto-attach-to-qube/5977)
 
 -----
 
