@@ -10,11 +10,10 @@
 
 I have spent the past couple of years with Qubes OS. Some days I used it less, some more. Now its my Main operating system, and since I dont really like how sparse the community-driven docs are on the far far range of the internet, I wrote my own and collected some useful links for you to look at.
 
+<br>
 
 <details open>
 <summary>⁉️ First off, a little Q&A about Qubes, as its rather niche.</summary>
-
-<br>
 
 **Q:** *"I heard it just runs everything in a VM?"*
 
@@ -33,7 +32,7 @@ I have spent the past couple of years with Qubes OS. Some days I used it less, s
 >**A:** It depends. You should have great understanding of Linux to use Qubes. Most of your "Qubes" / VMs will most likely run Fedora or Debian (thats the defaults) so knowing your way around in the shell is important. Its also important to know that if you want to game on Qubes OS, you will need some patience and a dedicated GPU for it. Usually I recommend qubes to everyone that wants more security, already loves organizing / compartmentalizing their System etc.
 
 </details>
-<img style="margin: 10px" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" height="25" />
+<img style="margin: 10px" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" height="25" /><br>
 
 #### Now, lets look at some documents. The first batch of those will be written by me, detailing things I made myself / found throughout my time of using Qubes OS. 
 > **Note** <br><br>
