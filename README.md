@@ -119,6 +119,7 @@ I have spent the past couple of years with Qubes OS. Some days I used it less, s
 <br>
 
 - Dont use "intelligent" panel hiding on xfce.. use "always"
+- I might be wrong, but it seems like the systemd call for sys-usb (and possibly other qubes) is incorrect, as systemd service files do not point to /rw/config/rc.local. Go fix that if you rely on it
 - `sudo qubes-dom0-update packagename` - Install a package to dom0
 - `qvm-run --pass-io qube 'cat /path/to/whatever.ext' > /home/Username/Downloads/whatever.ext` - Copy file to Dom0 **NOT RECOMMENDED**
 
