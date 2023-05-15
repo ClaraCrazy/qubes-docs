@@ -48,6 +48,7 @@ I have spent the past couple of years with Qubes OS. Some days I used it less, s
 - [Qubes OS Customization](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization)
 <br><br>
 
+- [Modified Scripts, because sometimes originals just dont cut it](https://github.com/ClaraCrazy/qubes-docs/blob/main/modified-things/readme.md)
 - [My entire journey with QubesOS, for those that actually care](https://github.com/ClaraCrazy/qubes-docs/blob/main/journey.md)
 </details>
 
