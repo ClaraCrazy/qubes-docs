@@ -9,7 +9,7 @@ Here is a list of tools that I modified / found modifications for, because I cou
 
   - How?
     - Has to be compiled in dom0 (yes, I know... its pain) 
-    - Required packages: xcb-util-devel, xcb-proto, dtkwm-devel, dtkwidget-devel, qt5, deepin-gentext-tools
+    - Required packages: `xcb-util-devel, xcb-proto, dtkwm-devel, dtkwidget-devel, qt5, deepin-gentext-tools`
     - git clone (Clone in a qube with internet, then copy to dom0), `mkdir build && cd build`, `cmake ../`, `make`, `sudo make install`, remove all packages again
 
   - Worth it?
