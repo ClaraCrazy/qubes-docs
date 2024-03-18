@@ -2,7 +2,7 @@
 
 Here is a list of tools that I modified / found modifications for, because I could not stand the originals. <br><br>
 
-- [Fixed deepin-screenshot](https://github.com/JojiiOfficial/deepin-screenshot):
+- [Fixed deepin-screenshot](https://github.com/ClaraCrazy/deepin-screenshot):
   - Why?
     - Auto-saves on "Key_Return" (you can also add "Key_Enter" for numpad enter)
     - Allows you to disable that incredibly annoying "File saved" notification
