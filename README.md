@@ -77,7 +77,7 @@ I have spent the past couple of years with Qubes OS. Some days I used it less, s
 <summary> 🎮 For the gamers:</summary>
 
 - [Secondary Storage for VM](https://www.qubes-os.org/doc/secondary-storage/)
-- [GPU Passthrough docs](https://github.com/Qubes-Community/Contents/blob/master/docs/customization/gaming-hvm.md) | psst.. on that 3.5gb patch, replace `_` with `-` for qube naming consistency
+- [GPU Passthrough docs](https://forum.qubes-os.org/t/create-a-gaming-hvm/19000) | psst.. on that 3.5gb patch, replace `_` with `-` for qube naming consistency
 - [Creating the HVM](https://www.qubes-os.org/doc/standalones-and-hvms/#creating-an-hvm)
 
 </details>
@@ -88,8 +88,8 @@ I have spent the past couple of years with Qubes OS. Some days I used it less, s
 <details open>
 <summary> 🌐 Community Scripts I use (handle with caution):</summary>
 
-- [Qubes-Template-Builder](https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-archlinux-template.md)
-- [Split-SSH setup for secure usage](https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/split-ssh.md)
+- [Qubes-Template-Builder](https://github.com/QubesOS/qubes-builderv2/) & [Template-Builder-Example](https://forum.qubes-os.org/t/archlinux-minimal-template/19052)
+- [Split-SSH setup for secure usage](https://forum.qubes-os.org/t/split-ssh/19060)
 - [qvm-screenshot-tool](https://github.com/evadogstar/qvm-screenshot-tool)
 - [Beautiful Conky](https://github.com/3hhh/qubes-conky) (Requires some adjustments, have fun)
 - [Auto-attach devices to specific qube](https://forum.qubes-os.org/t/usb-device-auto-attach-to-qube/5977)
