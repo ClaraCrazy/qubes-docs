@@ -20,9 +20,9 @@ Feel free to change anything you dont like and fork this repo. I just hate to se
 
 ## Dom0
 
-This script can also rice your Dom0. It will check if it is inside dom0, and use the appropriate qubes-dom0-update command instead of dnf for the dependencies, and use a [local copy of files](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization/local-dom0) for zsh git-clone. A new feature included in this, is to easily copy files to / from dom0 using thunar. My dear friend @WillyJL wrote [some nice scripts](https://github.com/WillyJL/qubes-scripts) while i was working on this. They are to be found in [local-dom0/copyscript/](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization/local-dom0/copyscript/)
+This script can also rice your Dom0. It will check if it is inside dom0, and use the appropriate qubes-dom0-update command instead of dnf for the dependencies, and use a [local copy of files](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization/local-dom0) for zsh git-clone. A new feature included in this, is to easily copy files to / from dom0 using thunar. @WillyJL wrote [some nice scripts](https://github.com/WillyJL/qubes-scripts) while i was working on this. They are to be found in [local-dom0/copyscript/](https://github.com/ClaraCrazy/qubes-docs/tree/main/customization/local-dom0/copyscript/)
 
-Furthermore, it will, if explicitely selected, also install KDE on dom0. But wait, theres more! ... [ROFI](https://github.com/davatorium/rofi), a wonderful little AppMenu, will also be installed. Dont want it, comment out / remove Lines `87` & `202` - `206`. Do like it? Go to your hotkey settings, and add a hotkey with the command `rofi -show drun`. Wont auto-do that. Nightmares lol
+Furthermore it will, if explicitely selected, also install KDE on dom0. But wait, theres more! ... [ROFI](https://github.com/davatorium/rofi), a wonderful little AppMenu, will also be installed. Dont want it, comment out / remove Lines `87` & `202` - `206`. Do like it? Go to your hotkey settings, and add a hotkey with the command `rofi -show drun`. Wont auto-do that. Nightmares lol
 
 
 ## Should I trust this?
